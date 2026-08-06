@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro de Ayuda Quimii</title>
+  <meta name="description" content="Centro de ayuda de Quimii: soporte para MeteoQuimii y el resto de los proyectos de Quimii.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sky-strip" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Quimii <span class="tag">Centro de Ayuda</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <span class="eyebrow">Soporte / Todos los proyectos</span>
+      <h1>¿Con qué proyecto necesitás ayuda?</h1>
+      <p class="lede">Elegí un producto de Quimii abajo, o buscá directamente tu problema. Vas a llegar a respuestas y contacto específicos para eso, sin vueltas.</p>
+
+      <form id="help-search-form" class="help-search" role="search">
+        <label for="help-search-input" class="sr-only" style="position:absolute;left:-9999px;">Buscar en el centro de ayuda</label>
+        <input id="help-search-input" type="text" placeholder="Ej: no me llegan las alertas de lluvia…" autocomplete="off">
+        <button type="submit">Buscar</button>
+      </form>
+      <p id="search-result" role="status"></p>
+    </section>
+
+    <section class="section wrap" aria-label="Proyectos Quimii">
+      <div class="card-grid">
+        <a class="project-card meteo" href="soporte-meteoquimii.html">
+          <span class="status-dot on" title="Soporte activo"></span>
+          <div class="icon-badge">☀️</div>
+          <h3>MeteoQuimii</h3>
+          <p class="desc">Pronósticos, alertas meteorológicas, calidad del aire, mapas y reportes de la comunidad.</p>
+          <span class="go">Ir al Centro de Ayuda →</span>
+        </a>
+
+        <a class="project-card base" href="#quimii-plataforma" id="quimii-plataforma">
+          <span class="status-dot soon" title="Contenido en preparación"></span>
+          <div class="icon-badge">💬</div>
+          <h3>Quimii (Plataforma)</h3>
+          <p class="desc">Cuenta, mensajería y proyectos colaborativos. Estamos preparando esta sección.</p>
+          <span class="go">Escribinos por ahora →</span>
+        </a>
+
+        <div class="project-card future" aria-disabled="true">
+          <div class="icon-badge">＋</div>
+          <h3>Próximo proyecto</h3>
+          <p class="desc">A medida que Quimii sume nuevos productos, van a tener su propio espacio acá.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" aria-label="Accesos rápidos">
+      <div class="section-head">
+        <span class="eyebrow">Accesos rápidos</span>
+        <h2>Problemas comunes</h2>
+      </div>
+      <div class="quick-grid">
+        <a class="quick-item" href="soporte-meteoquimii.html#faq-alertas"><span class="n">01</span> No me llegan las alertas</a>
+        <a class="quick-item" href="soporte-meteoquimii.html#faq-comunidad"><span class="n">02</span> Reportar algo en Comunidad</a>
+        <a class="quick-item" href="soporte-meteoquimii.html#faq-datos"><span class="n">03</span> Los datos parecen desactualizados</a>
+        <a class="quick-item" href="soporte-meteoquimii.html#contacto"><span class="n">04</span> Hablar con soporte</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Quimii™ — Centro de Ayuda</span>
+      <span>¿Sos parte del equipo? <a href="mailto:soporte@quimii.com">soporte@quimii.com</a></span>
+    </div>
+  </footer>
+
+  <script src="portal.js"></script>
+</body>
+</html>

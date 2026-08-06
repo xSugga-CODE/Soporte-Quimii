@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soporte MeteoQuimii — Centro de Ayuda Quimii</title>
+  <meta name="description" content="Preguntas frecuentes y contacto de soporte para MeteoQuimii.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sky-strip" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Quimii <span class="tag">Centro de Ayuda</span></a>
+      <a class="back-link" href="index.html">← Volver al Portal Quimii</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <span class="eyebrow">Soporte / MeteoQuimii</span>
+      <h1>Ayuda para MeteoQuimii</h1>
+      <p class="lede">Pronósticos, alertas, calidad del aire, mapas, astronomía y reportes de la comunidad. Buscá tu duda en las preguntas frecuentes o escribinos más abajo.</p>
+    </section>
+
+    <section class="section wrap">
+      <div class="section-head">
+        <span class="eyebrow">Preguntas frecuentes</span>
+        <h2>Lo que más se pregunta</h2>
+      </div>
+
+      <div class="faq-group" id="faq-datos">
+        <h3>Datos y pronóstico</h3>
+        <details class="faq">
+          <summary>¿Con qué frecuencia se actualizan los datos del tiempo?</summary>
+          <p>La app guarda los datos de tu ciudad en caché por 5 minutos para no repetir consultas innecesarias. Pasado ese tiempo, o si cambiás de ciudad, se pide la información más reciente. Además, MeteoQuimii se actualiza solo en segundo plano a intervalos regulares mientras la tenés abierta, sin que tengas que recargar nada.</p>
+        </details>
+        <details class="faq">
+          <summary>¿De dónde provienen los datos meteorológicos?</summary>
+          <p>El pronóstico y la búsqueda de ciudades usan Open-Meteo. La calidad del aire viene de CAMS. El radar de lluvia es de RainViewer, y las capas de satélite/nubes y calidad del aire en el mapa son de Windy.com. Todos son servicios reconocidos en meteorología y de acceso gratuito.</p>
+        </details>
+        <details class="faq">
+          <summary>¿Qué significa el índice de calidad del aire (AQI) y sus colores?</summary>
+          <p>MeteoQuimii usa la escala AQI de Estados Unidos, dividida en niveles (bueno, moderado, dañino para grupos sensibles, dañino, muy dañino, peligroso), cada uno con su propio color en los gráficos y en el resumen del día. Cuanto más alto el número, peor la calidad del aire.</p>
+        </details>
+        <details class="faq">
+          <summary>¿Cómo busco o cambio de ciudad?</summary>
+          <p>Escribí el nombre en el buscador principal, o tocá "Usar mi ubicación" para que la app detecte dónde estás. Podés guardar una ciudad con el botón de marcador para tenerla a mano, y las últimas ciudades consultadas aparecen en "Recientes".</p>
+        </details>
+      </div>
+
+      <div class="faq-group" id="faq-alertas">
+        <h3>Alertas</h3>
+        <details class="faq">
+          <summary>¿Cómo funcionan las alertas de la app?</summary>
+          <p>Son automáticas: MeteoQuimii analiza el pronóstico de tu ciudad y genera una alerta cuando se supera un umbral de riesgo, por ejemplo ráfagas de viento fuertes, ola de calor o de frío, riesgo de helada, radiación UV extrema, nevadas o lluvias intensas, y mala calidad del aire. No hay que activarlas a mano: si tu ciudad no tiene ninguna condición de riesgo, simplemente no vas a ver alertas ese día.</p>
+        </details>
+        <details class="faq">
+          <summary>No me llegan notificaciones push, ¿qué reviso?</summary>
+          <ul>
+            <li>Que le hayas dado permiso de notificaciones a MeteoQuimii cuando la app lo pidió al abrirla por primera vez.</li>
+            <li>Que el sistema Android no esté restringiendo la app en segundo plano (optimización de batería).</li>
+            <li>Que tu ciudad seleccionada realmente tenga una condición de alerta activa: las notificaciones avisan sobre riesgos puntuales, no se envían todos los días.</li>
+          </ul>
+          <p>Si después de revisar esto seguís sin recibirlas, contanos por el formulario de abajo indicando tu modelo de celular.</p>
+        </details>
+      </div>
+
+      <div class="faq-group" id="faq-comunidad">
+        <h3>Comunidad</h3>
+        <details class="faq">
+          <summary>¿Necesito crear una cuenta para usar Comunidad?</summary>
+          <p>No. Comunidad funciona con un acceso anónimo automático, no hace falta registrarse ni iniciar sesión con ningún dato personal.</p>
+        </details>
+        <details class="faq">
+          <summary>¿Qué es Comunidad y cómo reporto algo?</summary>
+          <p>Es un mapa donde otros usuarios cuentan lo que están viendo en su zona en tiempo real (por ejemplo granizo, inundación o un fenómeno puntual). Complementa el dato meteorológico oficial, no lo reemplaza. Para crear un reporte, indicá el tipo de fenómeno, la intensidad, si sigue ocurriendo, y opcionalmente un comentario o una foto. La ubicación puede tomarse por GPS o eligiéndola manualmente en el mapa.</p>
+        </details>
+        <details class="faq">
+          <summary>¿Cómo borro un reporte que hice?</summary>
+          <p>Entrá a Comunidad → "Mis reportes". Ahí vas a ver todo lo que reportaste vos, con la opción de eliminarlo.</p>
+        </details>
+      </div>
+
+      <div class="faq-group">
+        <h3>Ajustes y cuenta</h3>
+        <details class="faq">
+          <summary>¿Cómo cambio entre tema claro y oscuro?</summary>
+          <p>Tocá el ícono de engranaje (Ajustes) y elegí "Claro" u "Oscuro" en la sección Apariencia.</p>
+        </details>
+        <details class="faq">
+          <summary>¿MeteoQuimii es gratis?</summary>
+          <p>Sí, la app es gratuita.</p>
+        </details>
+      </div>
+
+      <div class="faq-group">
+        <h3>Problemas técnicos</h3>
+        <details class="faq">
+          <summary>Los mapas (radar, satélite o calidad del aire) no cargan</summary>
+          <p>Estas capas dependen de servicios externos (RainViewer y Windy) que se cargan sobre tu conexión a internet. Revisá que tengas datos móviles o Wi-Fi activos, y si usás algún bloqueador de contenido en el navegador, probá desactivarlo para MeteoQuimii, ya que a veces bloquea estos mapas por error.</p>
+        </details>
+        <details class="faq">
+          <summary>¿Qué es la sección de Astronomía?</summary>
+          <p>Es un espacio aparte del pronóstico, con un mensaje diario y eventos astronómicos visibles desde tu ubicación durante el mes actual y el siguiente. No afecta ni reemplaza los datos del clima.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section wrap" id="contacto">
+      <div class="section-head">
+        <span class="eyebrow">¿No encontraste tu respuesta?</span>
+        <h2>Escribinos</h2>
+        <p>Contanos qué pasó y te respondemos por email. Si preferís, también podés escribirnos directo por WhatsApp.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="panel">
+          <h3>Formulario de soporte</h3>
+          <p class="hint">Completalo y se te va a abrir tu app de correo con el mensaje ya armado, listo para enviar.</p>
+          <form id="support-form" data-support-email="soporte@quimii.com">
+            <div class="form-row">
+              <label for="f-name">Nombre</label>
+              <input id="f-name" type="text" required autocomplete="name">
+            </div>
+            <div class="form-row">
+              <label for="f-email">Correo</label>
+              <input id="f-email" type="email" required autocomplete="email">
+            </div>
+            <div class="form-row">
+              <label for="f-device">Dispositivo</label>
+              <select id="f-device">
+                <option value="Android (app)">Android (app)</option>
+                <option value="Web">Web</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="f-category">Categoría</label>
+              <select id="f-category">
+                <option value="Alertas y notificaciones">Alertas y notificaciones</option>
+                <option value="Datos del pronóstico">Datos del pronóstico</option>
+                <option value="Mapas">Mapas</option>
+                <option value="Comunidad">Comunidad</option>
+                <option value="Otro / no estoy seguro">Otro / no estoy seguro</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="f-message">Contanos qué pasó</label>
+              <textarea id="f-message" required placeholder="Descripción de la falla o la consulta..."></textarea>
+            </div>
+            <button class="btn-primary" type="submit">Enviar consulta</button>
+            <p id="support-form-status" class="form-status" role="status"></p>
+          </form>
+        </div>
+
+        <div class="contact-alt">
+          <div class="panel">
+            <h3>Contacto directo</h3>
+            <p class="hint">Para algo urgente o si preferís hablarlo directamente.</p>
+            <div style="display:flex; flex-direction:column; gap:12px;">
+              <a class="alt-btn whatsapp" href="https://wa.me/5490000000000" target="_blank" rel="noopener">
+                <span class="ico">📱</span>
+                <span>WhatsApp<br><small>Respuesta directa del equipo</small></span>
+              </a>
+              <span class="alt-btn chat disabled">
+                <span class="ico">💬</span>
+                <span>Chat en vivo<br><small>Próximamente</small></span>
+              </span>
+            </div>
+          </div>
+          <p class="source-note">Datos de MeteoQuimii: Open-Meteo (pronóstico y geocoding), CAMS (calidad del aire), RainViewer (radar) y Windy (satélite/aire).</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Quimii™ — Centro de Ayuda</span>
+      <a class="back-link" href="index.html">← Volver al Portal Quimii</a>
+    </div>
+  </footer>
+
+  <script src="portal.js"></script>
+</body>
+</html>
