@@ -51,8 +51,9 @@ function initSupportForm() {
       return;
     }
 
-    const subject = encodeURIComponent(`[MeteoQuimii Soporte] ${category} — ${name}`);
+    const subject = encodeURIComponent(`🛠️ [Soporte MeteoQuimii] ${category} — ${name}`);
     const body = encodeURIComponent(
+      `Este mensaje llega desde el formulario de soporte del Centro de Ayuda de Quimii (no es spam: alguien completó este formulario en soporte-meteoquimii.html).\n\n` +
       `Nombre: ${name}\nEmail: ${email}\nDispositivo: ${device}\nCategoría: ${category}\n\nDescripción:\n${message}`
     );
     window.location.href = `mailto:${SUPPORT_EMAIL}?subject=${subject}&body=${body}`;
